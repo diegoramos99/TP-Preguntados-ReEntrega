@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/app/view/estilo/crearPartidaEstilo.css">
+
+    <title>Document</title>
+</head>
+<body>
+
+<div class="game-list">
+    <form action="/app/crearPartida/guardarPartida" method="POST">
+    <div class="game-entry">
+        <img src="https://via.placeholder.com/60x60.png?text=Usuario" alt="Foto de perfil del usuario" class="user-pic">
+        <div class="game-info">
+            <h3>{{nombre_usuario}}</h3>
+
+            <input type="text" name="descripcion" placeholder="Descripcion de la partida">
+            <button class="join-button">Crear partida</button>
+        </div>
+    </div>
+    </form>
+    <a href="Home/listarPartidas">
+                        <button class="join-button">Cancelar</button>
+                        </a>
+</div>
+
+</body>
+</html>
